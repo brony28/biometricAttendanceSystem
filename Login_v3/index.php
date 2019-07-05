@@ -1,5 +1,30 @@
 <?php
 
+$conn = mysqli_connect("Localhost", "id10093143_inara", "@gnels2017", "id10093143_biometricattendance");
+
+function loginStudent() {
+	if (isset($_POST['rollno'])) {
+
+		$uname = $_POST['rollno'];
+		$upassword = $_POST['pass'];
+		// echo "this works";
+		$sql = "SELECT * FROM studentdata WHERE RollNo = '".$uname."' AND Password = '".$upassword."' limit 1";
+		$result = mysqli_query($conn,$sql);
+		if (mysqli_num_rows($result)==1) {
+			exit();
+			$link = window.open()
+			header('location: /docs/attendance.php');
+		}
+		else {
+			// echo "No user.";
+			exit();
+		}
+	}
+}
+
+function loginTeacher() {
+
+}
 
 ?>
 
@@ -47,8 +72,8 @@
 						Student's Log in
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
+					<div class="wrap-input100 validate-input" data-validate = "Enter Roll No.">
+						<input class="input100" type="text" name="rollno" placeholder="Username">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
@@ -65,9 +90,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
+						<button class="login100-form-btn" onclick="loginStudent()">Login</button>
 					</div>
 
 					<div class="text-center p-t-90">
@@ -105,9 +128,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
+						<input type="submit" name="submit" value="Login" class="login100-form-btn" onclick="loginTeacher()" />
 					</div>
 
 					<div class="text-center p-t-90">
@@ -127,22 +148,22 @@
 
 	<div id="dropDownSelect1"></div>
 	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+
+<!-- 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
 	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
+
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
+
 	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
+
 	<script src="vendor/daterangepicker/moment.min.js"></script>
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
+
 	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+
+	<script src="js/main.js"></script> -->
 
 </body>
 </html>
