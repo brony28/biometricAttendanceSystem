@@ -4,15 +4,15 @@
 #include <Adafruit_Fingerprint.h>
 
 
-//const char* ssid     = "JioFi4_13026E";
-//const char* password = "8md69stfrg";
+//const char* ssid     = "JioFi4_E";
+//const char* password = "8md69g";
 //
-//const char* ssid     = "TP-LINK_2BA4";
-//const char* password = "Benny@28";
+//const char* ssid     = "TP-LINK_4";
+//const char* password = "rony";
 
 //
 //const char* ssid     = "pay&get";
-//const char* password = "nahimilega";
+//const char* password = "4040404";
 
 const char* ssid     = "Someone";
 const char* password = "someone1";
