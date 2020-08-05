@@ -2,7 +2,7 @@
 
 
 
-// This project is an IoT product which stores and marks students attendance into the admin server. This eases the work of teachers by reducing the manual insertion of attendance.
+### This project is an IoT product which stores and marks students attendance into the admin server. This eases the work of teachers by reducing the manual insertion of attendance.
 
 
 
