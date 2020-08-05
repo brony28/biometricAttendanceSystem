@@ -19,7 +19,7 @@ Arduino to LCD and matrix keypad done
 
 Arduino to fingerprint, LCD and matrix keypad done 
 
-Connect ESP 8266 module...which is damn hard.!!!!!!!! done
+Connect ESP 8266 module.. 
 
 Replaced ESP8266 with Node MCU 1.0 (ESP-12E) done
 
