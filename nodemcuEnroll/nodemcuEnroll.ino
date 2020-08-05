@@ -3,8 +3,8 @@
 #include <ESP8266WiFi.h>
 #include <SoftwareSerial.h>
 
-//const char* ssid     = "JioFi4_13026E";
-//const char* password = "8md69stfrg";
+//const char* ssid     = "JioFi4_16E";
+//const char* password = "8md6rg";
 
 const char* ssid     = "TP-LINK_4";
 const char* password = "rony";
